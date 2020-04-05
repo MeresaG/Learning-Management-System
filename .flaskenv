@@ -1,0 +1,10 @@
+FLASK_APP = lms.py
+FLASK_ENV = development
+DEBUG = 1
+MAIL_SERVER = smtp.googlemail.com
+MAIL_PORT = 587
+MAIL_USE_TLS = 1
+MAIL_USERNAME = meresa27@gmail.com
+MAIL_PASSWORD = N?Adiet1nigrisback1
+SECRET_KEY = CADI_L34rn1ng_M4n4g3m3nt_Syst3m
+ACCESS_CODE = abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789?!@#

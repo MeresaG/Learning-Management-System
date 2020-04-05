@@ -1,0 +1,9 @@
+Dear {{ access_code.user_type }},
+
+Here you have an access code, which helps you create account in our portal {{access_code.access_code}}
+
+{{ url_for('login', _external=True) }}
+
+Sincerely,
+
+The CADI Team

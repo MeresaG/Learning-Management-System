@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+    <h1>Enter your access code to create a new account </h1>
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.access_code.label }}<br>
+            {{ form.access_code(size=32) }}<br>
+            {% for error in form.access_code.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>{{ form.submit() }}</p>
+        <p><a href="{{ url_for('login') }}">Go back to log in with an existing account </a></p>
+    </form>
+{% endblock %}

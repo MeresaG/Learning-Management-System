@@ -1,0 +1,11 @@
+<p>Dear {{ access_code.user_type }},</p>
+<p>
+    Here you have an access code, which helps you create account in our portal <br><strong style="color:blue">{{access_code.access_code}}</strong><br>
+    <p> click here to register <a href="{{ url_for('login', _external=True) }}">
+        Login
+    </a>.
+</p>
+<p>Alternatively, you can paste the following link in your browser's address bar:</p>
+<p>{{ url_for('login', _external=True) }}</p>
+<p>Sincerely,</p>
+<p>The CADI Team</p>
